@@ -149,10 +149,3 @@
     </p>
   </footer>
 </div>
-<script>
-const itemPrice = document.getElementById("item-price")
-itemPrice.addEventListener('change', () => {
-  document.getElementById("add-tax-price").innerHTML = Math.floor(itemPrice.value*0.1)
-  document.getElementById("profit").innerHTML = itemPrice.value-Math.floor((itemPrice.value*0.1))
-})
-</script>

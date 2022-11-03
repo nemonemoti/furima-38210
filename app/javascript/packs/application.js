@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+require("../tax")
 require("@rails/activestorage").start()
 require("channels")
 
