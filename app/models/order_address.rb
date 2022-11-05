@@ -10,7 +10,7 @@ class OrderAddress
     validates :phone_number
     validates :token
     validates :address
-    validates :phone_number, format: { with: /\A0\d{10}\z/ }
+    validates :phone_number, format: { with: /\A\d{10,11}\z/ }
     validates :area_id, numericality: { other_than: 1 }
   end
 
